@@ -157,7 +157,7 @@ const backScaleX = useTransform(springY, [0, 180], [1, 0.985]);
 
           <div className="profile-content">
             <div className="profile-img medium">
-              <img src="/profile.jpg" alt="Ibrahim Talb" />
+              <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Ibrahim Talb" />
             </div>
 
             <h2 className="name">Ibrahim Talb</h2>
@@ -167,7 +167,7 @@ const backScaleX = useTransform(springY, [0, 180], [1, 0.985]);
 
             <p className="email">ibrahim@email.com</p>
 
-            <a href="/Ibrahim-CV.pdf" download className="cv-button">
+            <a href={`${import.meta.env.BASE_URL}Ibrahim-CV.pdf`} download className="cv-button">
               Download CV
             </a>
           </div>
