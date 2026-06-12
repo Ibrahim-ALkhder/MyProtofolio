@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/Navbar.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1774673838868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1774673838868,
+            "name": "Commit-0",
+            "content": "import { motion } from \"framer-motion\";\nimport { navLinks } from \"../data/data\";\n\nexport default function Navbar() {\n  return (\n    <motion.header\n      initial={{ y: -30, opacity: 0 }}\n      animate={{ y: 0, opacity: 1 }}\n      transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}\n      className=\"fixed inset-x-0 top-0 z-50 px-4 pt-4 sm:px-6 lg:px-10\"\n    >\n      <nav className=\"mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/50 bg-white/55 px-5 py-3 shadow-soft backdrop-blur-xl sm:px-7\">\n        <a\n          href=\"#hero\"\n          className=\"font-serif text-xl tracking-wide text-textPrimary\"\n          style={{ fontFamily: '\"Cormorant Garamond\", serif' }}\n        >\n          Ibrahim\n        </a>\n\n        <div className=\"hidden items-center gap-8 md:flex\">\n          {navLinks.map((link) => (\n            <a\n              key={link.name}\n              href={link.href}\n              className=\"text-sm font-medium text-textSecondary transition duration-300 hover:text-textPrimary\"\n            >\n              {link.name}\n            </a>\n          ))}\n        </div>\n\n        <a\n          href=\"mailto:ibrahim@example.com\"\n          className=\"rounded-full bg-[#151515] px-4 py-2 text-sm font-medium text-white transition duration-300 hover:scale-[1.02] hover:bg-black\"\n        >\n          Let&apos;s Talk\n        </a>\n      </nav>\n    </motion.header>\n  );\n}"
+        }
+    ]
+}
